@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Condensed:wght@700&display=swap');
+      </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit page for "<%= oneMovie.title %>"</h1>
+
+    <hr>
+
+    <form action="/movies/<%= oneMovie._id%>?_method=PUT" method="POST">
+        <!-- ------------------- ?_method=DELETE" method="POST"> ------------------- -->
+        <label for="title">Title:</label>
+        <input name = "title" type="text" name="" id="">
+        <br>
+        <label for="Director">Director:</label>
+        <input type="director" name="" id="">
+        <br>
+        <label for="releaseDate">Release Date:</label>
+        <input type="releaseDate" name="" id="">
+        <br>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

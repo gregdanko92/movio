@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Condensed:wght@700&display=swap');
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Movie</title>
+</head>
+
+<body>
+    <h1>Add a new movie to your watchlist</h1>
+    <form method="POST" action="/movies">
+        <label for="title">Title:</label>
+        <input type="text" name="title">
+        <br>
+        <label for="director">Director:</label>
+        <input type="text" name="director">
+        <br>
+        <label for="releaseDate">Release Date:</label>
+        <input type="text" name="releaseDate">
+        <br>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
